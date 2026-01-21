@@ -89,15 +89,15 @@
 	  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
 	  // TODO: Add SDKs for Firebase products that you want to use
 
-	  const firebaseConfig = {
-  	  apiKey: "AIzaSyAU_5rxTFY3o-CDAxloG2LtzWWEUxyLePg",
-  	  authDomain: "waterlevelesp32-75bb9.firebaseapp.com",
-  	  databaseURL: "https://waterlevelesp32-75bb9-default-rtdb.firebaseio.com",
-    	  projectId: "waterlevelesp32-75bb9",
-  	  storageBucket: "waterlevelesp32-75bb9.firebasestorage.app",
-  	  messagingSenderId: "203100335703",
-  	  appId: "1:203100335703:web:6aab166f771f02b129fd12"
-	  };
+	const firebaseConfig = {
+  	apiKey: "AIzaSyBxI0n-LPaAn8dAW--RLWpczN6a01W9DKE",
+  	authDomain: "seven-star-ent.firebaseapp.com",
+  	databaseURL: "https://seven-star-ent-default-rtdb.asia-southeast1.firebasedatabase.app",
+  	projectId: "seven-star-ent",
+  	storageBucket: "seven-star-ent.firebasestorage.app",
+  	messagingSenderId: "989909005914",
+  	appId: "1:989909005914:web:212d14a6d47842c8a74a63"
+	};
 
 	  // Initialize Firebase
 	  firebase.initializeApp(firebaseConfig);
@@ -107,9 +107,9 @@
 	  var database = firebase.database();
 
 	  //getting reference to the data we want
-	  var dataRef1 = database.ref('DHT_11/Humidity');
-	  var dataRef2 = database.ref('DHT_11/Temperature');
-	  var dataRef3 = database.ref('DHT_11/Level');
+	  var dataRef1 = database.ref('FuelTank/Humidity');
+	  var dataRef2 = database.ref('FuelTank/Temp');
+	  var dataRef3 = database.ref('FuelTank/Level');
 
 	  //fetch the data
 	  dataRef1.on('value', function(getdata1){
@@ -133,5 +133,6 @@
 </body>
 
 </html>
+
 
 
